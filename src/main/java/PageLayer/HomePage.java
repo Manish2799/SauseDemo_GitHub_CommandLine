@@ -9,6 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import BaseLayer.BaseClass;
 import UtilityLayer.ElementHelper;
+import UtilityLayer.HandleDropdown;
 import UtilityLayer.Utility;
 
 public class HomePage extends BaseClass {
@@ -27,9 +28,10 @@ public class HomePage extends BaseClass {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void sortFunctionality()
+	public void sortFunctionality(String Psort)
 	{
-		ElementHelper.click(sort);
+		
+		HandleDropdown.selectByVisibleText(sort, Psort);
 	}
 	
 	public void selectProduct(int product)
