@@ -9,3 +9,8 @@ Feature: Testing Sause Demo Application
     When User should sort product as "Price (high to low)"
     And User should select 3 product
     Then User should click on shopping container
+
+    Scenario: Validate ChekOut Functionality
+    When User should click on checkout button
+    And User should enter firstname as "Mahesh" and lastname as "Pande" and zipcode as "123456"
+    Then User should click on continue button
