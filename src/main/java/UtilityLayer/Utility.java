@@ -21,4 +21,13 @@ public class Utility extends BaseClass{
 			}
 		}
 	}
+	
+	
+	public static void getProduct(List<WebElement> pList, int product)
+	{
+       for(int i=0; i<=product; i++)
+       {
+    	   pList.get(i).click();
+       }
+	}
 }
